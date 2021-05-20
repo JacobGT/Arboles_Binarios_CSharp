@@ -1,0 +1,12 @@
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\bin\Debug\ProyectoFinalProgra3.exe.config
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\bin\Debug\ProyectoFinalProgra3.exe
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\bin\Debug\ProyectoFinalProgra3.pdb
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.csprojAssemblyReference.cache
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.frmMantenimientoAlumno.resources
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.frmPrincipal.resources
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.Properties.Resources.resources
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.csproj.GenerateResource.cache
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.csproj.CoreCompileInputs.cache
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.exe
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.pdb
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.frmMantenimientoCarrera.resources
