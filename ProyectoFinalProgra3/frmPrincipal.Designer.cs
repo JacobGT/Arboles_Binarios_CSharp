@@ -35,6 +35,7 @@ namespace ProyectoFinalProgra3
             this.carrerasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolBinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.genereacionDeArbolToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@ namespace ProyectoFinalProgra3
             this.arbolBinarioToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1769, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1773, 28);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,28 +63,38 @@ namespace ProyectoFinalProgra3
             // carrerasToolStripMenuItem
             // 
             this.carrerasToolStripMenuItem.Name = "carrerasToolStripMenuItem";
-            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.carrerasToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.carrerasToolStripMenuItem.Text = "Carreras";
             this.carrerasToolStripMenuItem.Click += new System.EventHandler(this.carrerasToolStripMenuItem_Click);
             // 
             // alumnosToolStripMenuItem
             // 
             this.alumnosToolStripMenuItem.Name = "alumnosToolStripMenuItem";
-            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.alumnosToolStripMenuItem.Size = new System.Drawing.Size(150, 26);
             this.alumnosToolStripMenuItem.Text = "Alumnos";
             this.alumnosToolStripMenuItem.Click += new System.EventHandler(this.alumnosToolStripMenuItem_Click);
             // 
             // arbolBinarioToolStripMenuItem
             // 
+            this.arbolBinarioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.genereacionDeArbolToolStripMenuItem});
             this.arbolBinarioToolStripMenuItem.Name = "arbolBinarioToolStripMenuItem";
             this.arbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(111, 24);
             this.arbolBinarioToolStripMenuItem.Text = "Arbol Binario";
+            this.arbolBinarioToolStripMenuItem.Click += new System.EventHandler(this.arbolBinarioToolStripMenuItem_Click);
+            // 
+            // genereacionDeArbolToolStripMenuItem
+            // 
+            this.genereacionDeArbolToolStripMenuItem.Name = "genereacionDeArbolToolStripMenuItem";
+            this.genereacionDeArbolToolStripMenuItem.Size = new System.Drawing.Size(229, 26);
+            this.genereacionDeArbolToolStripMenuItem.Text = "Generacion de Arbol";
+            this.genereacionDeArbolToolStripMenuItem.Click += new System.EventHandler(this.genereacionDeArbolToolStripMenuItem_Click);
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1769, 723);
+            this.ClientSize = new System.Drawing.Size(1773, 679);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -106,6 +117,7 @@ namespace ProyectoFinalProgra3
         private System.Windows.Forms.ToolStripMenuItem carrerasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem alumnosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arbolBinarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem genereacionDeArbolToolStripMenuItem;
     }
 }
 

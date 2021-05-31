@@ -10,3 +10,4 @@ C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\Proyec
 C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.exe
 C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.pdb
 C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.frmMantenimientoCarrera.resources
+C:\Users\jacob\Progra\USPG\C#\FinalProgra3\ProyectoFinalProgra3\obj\Debug\ProyectoFinalProgra3.frmArbolBinario.resources

@@ -35,5 +35,17 @@ namespace ProyectoFinalProgra3
             mantenimientoCarrera.MdiParent = this;
             mantenimientoCarrera.Show();
         }
+
+        private void arbolBinarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void genereacionDeArbolToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario arbolBinario = new frmArbolBinario();
+            arbolBinario.MdiParent = this;
+            arbolBinario.Show();
+        }
     }
 }

@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alumno.cs" />
+    <Compile Include="Arbol_Binario.cs" />
     <Compile Include="dsFinal.cs">
       <DependentUpon>dsFinal.xsd</DependentUpon>
     </Compile>
@@ -53,6 +55,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsFinal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmArbolBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmArbolBinario.Designer.cs">
+      <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMantenimientoAlumno.cs">
       <SubType>Form</SubType>
@@ -72,8 +80,12 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Nodo_Arbol.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmArbolBinario.resx">
+      <DependentUpon>frmArbolBinario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMantenimientoAlumno.resx">
       <DependentUpon>frmMantenimientoAlumno.cs</DependentUpon>
     </EmbeddedResource>
