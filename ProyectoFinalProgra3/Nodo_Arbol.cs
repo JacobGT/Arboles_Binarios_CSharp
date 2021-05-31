@@ -154,7 +154,7 @@ namespace ProyectoFinalProgra3
                                         {
                                             Nodo_Arbol AuxiliarNodo = null;
                                             Nodo_Arbol Auxiliar = t.Izquierdo;
-                                            bool Bandera = true;
+                                            bool Bandera = false; // cambio true a false
                                             while (Auxiliar.Derecho != null)
                                             {
                                                 AuxiliarNodo = Auxiliar;
