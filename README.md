@@ -17,7 +17,7 @@ Mantenimientos de las tablas access.
 ![ABB4 Image](ProyectoFinalProgra3/images/TransversaInOrder.png)
 ![ABB5 Image](ProyectoFinalProgra3/images/TransversaPostOrder.png)
 - Operaciones Básicas: Ingreso, Edicion y Eliminacion de Datos ✅
-- Numero de Nodos, Altura de Arbol, Transversa y Recorridos, Dibujo de Arbol, Busqueda de Nodo, etc. ✅
+- Numero de Nodos, Altura de Arbol, Transversa y Recorridos, Dibujo de Arbol, Busqueda de Nodo (con cambio de color), etc. ✅
 - A la hora de hacer click en un nodo se presenta la informacion del alumno ✅
 
 ### Clases incluidas en el proyecto
