@@ -17,6 +17,9 @@ namespace ProyectoFinalProgra3
         private int alturaMax = 0;
         public int AlturaMax { get => alturaMax; set => alturaMax = value; }
 
+        private string numeroNodos;
+        public string NumeroNodos { get => numeroNodos; set => numeroNodos = value; }
+
         private string iteracionPreOrder;
         private string iteracionInOrder;
         private string iteracionPostOrder;
@@ -423,5 +426,43 @@ namespace ProyectoFinalProgra3
             return infoNodoClick;
         }
 
+        public void TransversaNumeroNodos(Nodo_Arbol nodo)
+        {
+            // hacemos una transversa y colocamos el valor de cada nodo en un string separados por comas
+            // al finalizar dependiendo de cuantos valores tengamos sabremos cuantos nodos existen
+            // hay otras formas de saber cuantos nodos hay pero esta fue la que escogimos
+
+            // caso base
+            if (nodo == null)
+            {
+                return;
+            }
+
+            // Central
+            numeroNodos += nodo.info.ToString() + ",";
+
+            // procesamos el izquierdo
+            if (nodo.Izquierdo != null)
+            {
+                TransversaNumeroNodos(nodo.Izquierdo);
+            }
+
+            // procesamos el derecho
+            if (nodo.Derecho != null)
+            {
+                TransversaNumeroNodos(nodo.Derecho);
+            }
+        }
+
+        public int RevisionNumeroNodos(string iteracionNumeroNodos)
+        {
+            if (iteracionNumeroNodos.EndsWith(","))
+            {
+                iteracionNumeroNodos = iteracionNumeroNodos.Remove(iteracionNumeroNodos.Length - 2);
+            }
+
+            string[] listaNumNodos = iteracionNumeroNodos.Split(',');
+            return listaNumNodos.Length;
+        }
     }
 }

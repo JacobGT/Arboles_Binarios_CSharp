@@ -44,6 +44,7 @@ namespace ProyectoFinalProgra3
             this.dsFinal = new ProyectoFinalProgra3.dsFinal();
             this.pbArbolBinario = new System.Windows.Forms.PictureBox();
             this.vista_alumnoTableAdapter = new ProyectoFinalProgra3.dsFinalTableAdapters.vista_alumnoTableAdapter();
+            this.btnNumNodos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,6 +63,7 @@ namespace ProyectoFinalProgra3
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.btnNumNodos);
             this.splitContainer1.Panel1.Controls.Add(this.btnEncontrarPadre);
             this.splitContainer1.Panel1.Controls.Add(this.btnEliminar);
             this.splitContainer1.Panel1.Controls.Add(this.btnExtra);
@@ -75,8 +77,8 @@ namespace ProyectoFinalProgra3
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pbArbolBinario);
-            this.splitContainer1.Size = new System.Drawing.Size(1772, 721);
-            this.splitContainer1.SplitterDistance = 88;
+            this.splitContainer1.Size = new System.Drawing.Size(1983, 806);
+            this.splitContainer1.SplitterDistance = 98;
             this.splitContainer1.TabIndex = 0;
             // 
             // btnEncontrarPadre
@@ -101,7 +103,7 @@ namespace ProyectoFinalProgra3
             // 
             // btnExtra
             // 
-            this.btnExtra.Location = new System.Drawing.Point(1602, 31);
+            this.btnExtra.Location = new System.Drawing.Point(1795, 31);
             this.btnExtra.Name = "btnExtra";
             this.btnExtra.Size = new System.Drawing.Size(167, 34);
             this.btnExtra.TabIndex = 4;
@@ -175,7 +177,7 @@ namespace ProyectoFinalProgra3
             this.pbArbolBinario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbArbolBinario.Location = new System.Drawing.Point(0, 0);
             this.pbArbolBinario.Name = "pbArbolBinario";
-            this.pbArbolBinario.Size = new System.Drawing.Size(1772, 629);
+            this.pbArbolBinario.Size = new System.Drawing.Size(1983, 704);
             this.pbArbolBinario.TabIndex = 0;
             this.pbArbolBinario.TabStop = false;
             this.pbArbolBinario.Click += new System.EventHandler(this.pbArbolBinario_Click);
@@ -186,11 +188,21 @@ namespace ProyectoFinalProgra3
             // 
             this.vista_alumnoTableAdapter.ClearBeforeFill = true;
             // 
+            // btnNumNodos
+            // 
+            this.btnNumNodos.Location = new System.Drawing.Point(1605, 31);
+            this.btnNumNodos.Name = "btnNumNodos";
+            this.btnNumNodos.Size = new System.Drawing.Size(167, 34);
+            this.btnNumNodos.TabIndex = 7;
+            this.btnNumNodos.Text = "# Nodos";
+            this.btnNumNodos.UseVisualStyleBackColor = true;
+            this.btnNumNodos.Click += new System.EventHandler(this.btnNumNodos_Click);
+            // 
             // frmArbolBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1772, 721);
+            this.ClientSize = new System.Drawing.Size(1983, 806);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmArbolBinario";
@@ -222,5 +234,6 @@ namespace ProyectoFinalProgra3
         private System.Windows.Forms.Button btnExtra;
         private System.Windows.Forms.Button btnEncontrarPadre;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnNumNodos;
     }
 }

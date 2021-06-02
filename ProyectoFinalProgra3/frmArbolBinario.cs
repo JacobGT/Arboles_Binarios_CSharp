@@ -33,6 +33,8 @@ namespace ProyectoFinalProgra3
 
         public Rectangle areaNodo;
 
+        public int numNodos = 0;
+
         private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
         {
 
@@ -79,6 +81,7 @@ namespace ProyectoFinalProgra3
             binaryTree.Insertar(dato);
             agregarAlumno(dato);
             pbArbolBinario.Refresh();
+            numNodos++;
         }
 
         private void pbArbolBinario_Paint(object sender, PaintEventArgs e)
@@ -208,6 +211,7 @@ namespace ProyectoFinalProgra3
             int dato = int.Parse(fila.Row[2].ToString());
             binaryTree.Eliminar(dato);
             pbArbolBinario.Refresh();
+            numNodos--;
         }
 
         private void btnEncontrarPadre_Click(object sender, EventArgs e)
@@ -224,6 +228,15 @@ namespace ProyectoFinalProgra3
                     MessageBox.Show(student.IterarInformacion(), "Informacion del Nodo Padre: ");
                 }
             }
+        }
+
+        private void btnNumNodos_Click(object sender, EventArgs e)
+        {
+            binaryTree.TransversaNumeroNodos(binaryTree.Raiz);
+            MessageBox.Show(binaryTree.RevisionNumeroNodos(binaryTree.NumeroNodos).ToString(), "Cantidad de Nodos Existentes: ");
+            binaryTree.NumeroNodos = "";
+
+            //MessageBox.Show(numNodos.ToString(), "Cantidad de Nodos Existentes: ");
         }
     }
 }
