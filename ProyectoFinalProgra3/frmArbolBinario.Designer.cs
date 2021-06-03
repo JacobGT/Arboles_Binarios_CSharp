@@ -32,6 +32,7 @@ namespace ProyectoFinalProgra3
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolBinario));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.btnNumNodos = new System.Windows.Forms.Button();
             this.btnEncontrarPadre = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnExtra = new System.Windows.Forms.Button();
@@ -44,7 +45,12 @@ namespace ProyectoFinalProgra3
             this.dsFinal = new ProyectoFinalProgra3.dsFinal();
             this.pbArbolBinario = new System.Windows.Forms.PictureBox();
             this.vista_alumnoTableAdapter = new ProyectoFinalProgra3.dsFinalTableAdapters.vista_alumnoTableAdapter();
-            this.btnNumNodos = new System.Windows.Forms.Button();
+            this.txtPreOrder = new System.Windows.Forms.TextBox();
+            this.txtInOrder = new System.Windows.Forms.TextBox();
+            this.txtPostOrder = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +69,12 @@ namespace ProyectoFinalProgra3
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.label3);
+            this.splitContainer1.Panel1.Controls.Add(this.label2);
+            this.splitContainer1.Panel1.Controls.Add(this.label1);
+            this.splitContainer1.Panel1.Controls.Add(this.txtPostOrder);
+            this.splitContainer1.Panel1.Controls.Add(this.txtInOrder);
+            this.splitContainer1.Panel1.Controls.Add(this.txtPreOrder);
             this.splitContainer1.Panel1.Controls.Add(this.btnNumNodos);
             this.splitContainer1.Panel1.Controls.Add(this.btnEncontrarPadre);
             this.splitContainer1.Panel1.Controls.Add(this.btnEliminar);
@@ -77,9 +89,19 @@ namespace ProyectoFinalProgra3
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.pbArbolBinario);
-            this.splitContainer1.Size = new System.Drawing.Size(1983, 806);
-            this.splitContainer1.SplitterDistance = 98;
+            this.splitContainer1.Size = new System.Drawing.Size(1983, 929);
+            this.splitContainer1.SplitterDistance = 281;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // btnNumNodos
+            // 
+            this.btnNumNodos.Location = new System.Drawing.Point(1605, 31);
+            this.btnNumNodos.Name = "btnNumNodos";
+            this.btnNumNodos.Size = new System.Drawing.Size(167, 34);
+            this.btnNumNodos.TabIndex = 7;
+            this.btnNumNodos.Text = "# Nodos";
+            this.btnNumNodos.UseVisualStyleBackColor = true;
+            this.btnNumNodos.Click += new System.EventHandler(this.btnNumNodos_Click);
             // 
             // btnEncontrarPadre
             // 
@@ -177,7 +199,7 @@ namespace ProyectoFinalProgra3
             this.pbArbolBinario.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pbArbolBinario.Location = new System.Drawing.Point(0, 0);
             this.pbArbolBinario.Name = "pbArbolBinario";
-            this.pbArbolBinario.Size = new System.Drawing.Size(1983, 704);
+            this.pbArbolBinario.Size = new System.Drawing.Size(1983, 644);
             this.pbArbolBinario.TabIndex = 0;
             this.pbArbolBinario.TabStop = false;
             this.pbArbolBinario.Click += new System.EventHandler(this.pbArbolBinario_Click);
@@ -188,27 +210,69 @@ namespace ProyectoFinalProgra3
             // 
             this.vista_alumnoTableAdapter.ClearBeforeFill = true;
             // 
-            // btnNumNodos
+            // txtPreOrder
             // 
-            this.btnNumNodos.Location = new System.Drawing.Point(1605, 31);
-            this.btnNumNodos.Name = "btnNumNodos";
-            this.btnNumNodos.Size = new System.Drawing.Size(167, 34);
-            this.btnNumNodos.TabIndex = 7;
-            this.btnNumNodos.Text = "# Nodos";
-            this.btnNumNodos.UseVisualStyleBackColor = true;
-            this.btnNumNodos.Click += new System.EventHandler(this.btnNumNodos_Click);
+            this.txtPreOrder.Location = new System.Drawing.Point(45, 102);
+            this.txtPreOrder.Multiline = true;
+            this.txtPreOrder.Name = "txtPreOrder";
+            this.txtPreOrder.Size = new System.Drawing.Size(359, 152);
+            this.txtPreOrder.TabIndex = 8;
+            // 
+            // txtInOrder
+            // 
+            this.txtInOrder.Location = new System.Drawing.Point(779, 103);
+            this.txtInOrder.Multiline = true;
+            this.txtInOrder.Name = "txtInOrder";
+            this.txtInOrder.Size = new System.Drawing.Size(359, 151);
+            this.txtInOrder.TabIndex = 9;
+            // 
+            // txtPostOrder
+            // 
+            this.txtPostOrder.Location = new System.Drawing.Point(1588, 103);
+            this.txtPostOrder.Multiline = true;
+            this.txtPostOrder.Name = "txtPostOrder";
+            this.txtPostOrder.Size = new System.Drawing.Size(359, 151);
+            this.txtPostOrder.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(42, 82);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(137, 17);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Recorrido PreOrder:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(776, 83);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(126, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Recorrido InOrder:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(1585, 83);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(143, 17);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Recorrido PostOrder:";
             // 
             // frmArbolBinario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1983, 806);
+            this.ClientSize = new System.Drawing.Size(1983, 929);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmArbolBinario";
             this.Text = "Generacion & Analisis Arbol Binario Busqueda";
             this.Load += new System.EventHandler(this.frmArbolBinario_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
@@ -235,5 +299,11 @@ namespace ProyectoFinalProgra3
         private System.Windows.Forms.Button btnEncontrarPadre;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnNumNodos;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtPostOrder;
+        private System.Windows.Forms.TextBox txtInOrder;
+        private System.Windows.Forms.TextBox txtPreOrder;
     }
 }

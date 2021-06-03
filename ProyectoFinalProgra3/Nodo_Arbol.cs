@@ -71,6 +71,11 @@ namespace ProyectoFinalProgra3
         private static int Alturas(Nodo_Arbol t)
         {
             return t == null ? -1 : t.altura;
+            // if ( t == null){
+            //     return -1;
+            //} else{
+            //   return t.altura;
+            //}
         }
 
         public void Eliminar(int x, ref Nodo_Arbol t)

@@ -124,16 +124,22 @@ namespace ProyectoFinalProgra3
 
         private void btnTransversa_Click(object sender, EventArgs e)
         {
+            txtPreOrder.Text = "";
             binaryTree.TransversaPreOrder(binaryTree.Raiz);
-            MessageBox.Show(binaryTree.IteracionPreOrder, "Transversa PreOrder:");
+            // MessageBox.Show(binaryTree.IteracionPreOrder, "Transversa PreOrder:");
+            txtPreOrder.Text = binaryTree.IteracionPreOrder;
             binaryTree.IteracionPreOrder = "";
 
+            txtInOrder.Text = "";
             binaryTree.TransversaInOrder(binaryTree.Raiz);
-            MessageBox.Show(binaryTree.IteracionInOrder, "Transversa InOrder");
+            // MessageBox.Show(binaryTree.IteracionInOrder, "Transversa InOrder");
+            txtInOrder.Text = binaryTree.IteracionInOrder;
             binaryTree.IteracionInOrder = "";
 
+            txtPostOrder.Text = "";
             binaryTree.TransversaPostOrder(binaryTree.Raiz);
-            MessageBox.Show(binaryTree.IteracionPostOrder, "Transversa PostOrder");
+            // MessageBox.Show(binaryTree.IteracionPostOrder, "Transversa PostOrder");
+            txtPostOrder.Text = binaryTree.IteracionPostOrder;
             binaryTree.IteracionPostOrder = "";
         }
 
