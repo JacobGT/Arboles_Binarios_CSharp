@@ -140,7 +140,7 @@ namespace ProyectoFinalProgra3
         private void btnAltura_Click(object sender, EventArgs e)
         {
             binaryTree.TransversaAltura(binaryTree.Raiz);
-            MessageBox.Show("Altura: " + binaryTree.AlturaMax.ToString(), "Altura de Arbol: ");
+            MessageBox.Show("Altura: " + (binaryTree.AlturaMax + 1).ToString(), "Altura de Arbol: ");
         }
 
         private void btnExtra_Click(object sender, EventArgs e)

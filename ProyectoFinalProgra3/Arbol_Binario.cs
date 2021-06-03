@@ -14,7 +14,7 @@ namespace ProyectoFinalProgra3
         public Nodo_Arbol aux;
         public Nodo_Arbol trabajo;
 
-        private int alturaMax = 0;
+        private int alturaMax;
         public int AlturaMax { get => alturaMax; set => alturaMax = value; }
 
         private string numeroNodos;

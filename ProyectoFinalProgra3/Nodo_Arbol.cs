@@ -203,7 +203,7 @@ namespace ProyectoFinalProgra3
                     {
                         if (x == t.info)
                         {
-                            MessageBox.Show("Nodo encontrado en el nivel: "+t.nivel, "Alerta");
+                            MessageBox.Show("Nodo encontrado en el nivel: "+ (t.nivel + 1).ToString(), "Alerta");
                         }
                     }
                 }
